@@ -2,7 +2,11 @@ Rails.application.routes.draw do
   
   root to: 'products#index'
 
-  resources :users, only: [:show, :new, :create]
+  resources :users, only: [:new, :create]
+  resources :sessions, only: [:new, :create]
+
+  get '/logout' => 'sessions#destroy'
+
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
 
