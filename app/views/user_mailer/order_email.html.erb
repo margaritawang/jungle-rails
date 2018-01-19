@@ -9,7 +9,14 @@
       You have successfully ordered from Jungle,
       your order number is: <%= @order.id %>.<br>
     </p>
-    
+
+    <% @info.each do |item|%>
+    <tr>
+      <td>Price: <%=item.item_price_cents / 100.0%></td>
+      <td>Quantity: <%=item.quantity%></td>
+      <td>Total: <%=item.total_price_cents / 100.0%></td>
+    </tr>
+    <% end %>
     <p>Thanks for joining and have a great day!</p>
   </body>
 </html>
