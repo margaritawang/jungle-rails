@@ -10,8 +10,11 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
   
   def authorize
-    redirect_to [:new, :session] unless current_user
+    authenticate_or_request_with_http_basic do |user, password|
+      user == ENV["ADMIN_USERNAME"] && password == ENV["ADMIN_PASSWORD"]
+    end
   end
+
   private
 
   def cart
