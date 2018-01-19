@@ -25,7 +25,10 @@
         </dl>
       </div>
     </div>
-
+    <% @reviews.each do |review|%>
+      <h4>Rating: <%= review.rating%></h4>
+      <h4>Description: <%= review.description%></h4>
+    <% end %>    
   </article>
 
 </section>

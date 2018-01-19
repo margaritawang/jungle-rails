@@ -154,7 +154,12 @@ User.first.reviews.create({
   rating: 4,
   product: chair
 })
-# bookshelf.reviews.create user: User.first
+
+User.first.reviews.create({
+  description: "It's just ok",
+  rating: 3,
+  product: chair
+})
 
 
 puts "DONE!"
