@@ -7,9 +7,14 @@ class ReviewsController < ApplicationController
     @review.user_id = session[:user_id]
     if @review.save
       p @review
-      redirect_to :products
+      redirect_to :back
 
     end
+  end
+
+  def remove_review
+    Review.find(params[:review_id]).destroy
+    redirect_to :back
   end
 
   private

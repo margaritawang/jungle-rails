@@ -26,13 +26,24 @@
       </div>
     </div>
 
+    <h2>Customer Reviews </h2>
     <% @reviews.reverse.each do |review|%>
-      <h2>Rating: <%= review.rating%></h2>
+      <div>
+      <%= review.rating.times do |i|%>
+      <%= fa_icon "star"%>
+      <% end %> Stars
       <h4>Description: <%= review.description%></h4>
+      </div>
+      <% if review.user_id == session[:user_id]%>
+        <%= link_to product_review_remove_review_path(review_id: review.id, product_id: params[:id]), class: 'btn btn-xs btn-danger', method: :delete do %>
+          Delete Review
+        <% end %>
+      <% end %>
     <% end %>    
-  </article>
 
 <% if current_user %>
+  <h2>Write a review:</h2>
+  
   <%= form_for [@product, Review.new] do |form| %>
 
     <div class="form-group">
@@ -49,4 +60,5 @@
   <% end %>
 <% end %>
 
+  </article>
 </section>
