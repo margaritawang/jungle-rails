@@ -15,6 +15,10 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def check_login
+    redirect_to '/login' unless current_user
+  end
+  
   private
 
   def cart
