@@ -19,6 +19,7 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 ![Screenshot of Homepage]()
 ![Screenshot of Product Page with Reviews]()
 ![Screenshot of Empty Cart]()
+![Screenshot of Admin Category Page]()
 
 ## Stripe Testing
 
