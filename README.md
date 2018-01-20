@@ -16,7 +16,9 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 9. Run `bin/rails s -b 0.0.0.0` to start the server
 
 ## Final Project
-
+![Screenshot of Homepage]()
+![Screenshot of Product Page with Reviews]()
+![Screenshot of Empty Cart]()
 
 ## Stripe Testing
 
