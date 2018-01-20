@@ -20,7 +20,7 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 ![Screenshot of Product Page with Reviews](https://github.com/margaritawang/jungle-rails/blob/master/public/docs/Screenshot%20from%202018-01-20%2014-23-09.png)
 ![Screenshot of Empty Cart](https://github.com/margaritawang/jungle-rails/blob/master/public/docs/Screenshot%20from%202018-01-20%2014-24-06.png)
 ![Screenshot of Admin Category Page](https://github.com/margaritawang/jungle-rails/blob/master/public/docs/Screenshot%20from%202018-01-20%2014-25-08.png)
-![Screenshot of Orders](https://github.com/margaritawang/jungle-rails/blob/master/public/docs/Screenshot%20from%202018-01-20%2014-25-08.png)
+![Screenshot of Orders](https://github.com/margaritawang/jungle-rails/blob/master/public/docs/Screenshot%20from%202018-01-20%2014-37-29.png)
 
 ## Stripe Testing
 
